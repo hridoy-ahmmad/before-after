@@ -1,0 +1,38 @@
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    margin-left:45%;
+}
+
+.Button a{
+    text-decoration: none;
+    font-size: 36px;
+    display: inline-block;
+    padding: 25px 40px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.Button a::before{
+    content: "";
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    border-radius: 10px;
+    transition: 0.3s;
+    z-index: -1;
+}
+.Button a:hover::before{
+    width: 100%;
+
+}
